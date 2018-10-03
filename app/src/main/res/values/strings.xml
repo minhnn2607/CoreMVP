@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Core</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="zero">0</string>
+
+    <!-- Account -->
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="error_empty_field">This field cannot be empty</string>
+    <string name="log_in">LOG IN</string>
+
+    <!-- Dialog -->
+    <string name="processing_sign_in">Signing In…</string>
+    <string name="processing_please_wait">Please wait…</string>
+    <string name="error_no_internet">Please check your internet connection.</string>
+    <string name="error_timeout_connect">Cannot connect to server. Please check your internet connection.</string>
+    <string name="error_unknown">An error has occurred, please try again later.</string>
+    <string name="home">Home</string>
+
+</resources>

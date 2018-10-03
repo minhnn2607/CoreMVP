@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    project.ext {
+        supportLibVersion = '27.1.1'
+        retrofitLibVersion = '2.4.0'
+        picassoVersion = '2.71828'
+        icePickVersion = '3.2.0'
+        parcelerVersion = '1.1.11'
+        butterKnifeVersion = '8.8.1'
+        rxBindingVersion = '2.1.1'
+        timberLibVersion = '4.7.1'
+        chuckLibVersion = '1.1.0'
+        leakCanaryLibVersion = '1.6.1'
+        meterialCalendarVersion = '1.6.1'
+        mpChartVersion = 'v3.0.3'
+        autoFitVersion = '0.2.+'
+        dbflowVersion = '4.2.4'
+        eventbusVersion = '3.1.1'
+        swipeLayoutVersion = '1.0.15'
+        securePrefVersion = '0.1.4'
+        fabricVersion = '2.9.5@aar'
+        prettyTimeVersion = '4.0.1.Final'
+        circleImageVersion = '2.2.0'
+        qcCodeScannerVersion = '1.9.4'
+        rxPermissionVersion = '0.10.2'
+        room_version = '1.1.1'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

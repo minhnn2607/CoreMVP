@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+   <vn.nms.core.ui.widget.HeaderView
+       android:id="@+id/headerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:hv_title="@string/home"
+       app:hv_leftImage="@drawable/ic_back"/>
+
+
+</LinearLayout>

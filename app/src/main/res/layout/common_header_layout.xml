@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_header"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <vn.nms.core.ui.widget.ImageViewMenu
+                android:id="@+id/imgToolbarLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ivm_src="@drawable/ic_back"
+                android:padding="5dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tvToolbarLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@drawable/text_primary_selector"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:text="Left" />
+        </LinearLayout>
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="Header" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ContentDescription">
+
+            <vn.nms.core.ui.widget.ImageViewMenu
+                android:id="@+id/imgToolbarRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvToolbarRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@drawable/text_primary_selector"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:text="Right" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/line_view" />
+</LinearLayout>
